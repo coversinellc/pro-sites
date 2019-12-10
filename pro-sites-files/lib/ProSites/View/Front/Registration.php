@@ -193,7 +193,7 @@ if ( ! class_exists( 'ProSites_View_Front_Registration' ) ) {
 				$content .= '<input name="blogname" type="text" id="blogname" value="' . esc_attr( $blogname ) . '" maxlength="60" /><span class="suffix_address">.' . ( $site_domain = preg_replace( '|^www\.|', '', $current_site->domain ) ) . '</span></div>';
 			}
 
-			$content .= '<div class="blog_title"><label for="blog_title">' . esc_html__('Site Title:', 'psts' ) . '</label>';
+			$content .= '<div class="blog_title"><label for="blog_title">' . esc_html__('Site Title: ', 'psts' ) . '</label>';
 			if ( $errmsg = $errors->get_error_message('blog_title') ) {
 				$content .= '<p class="error">' . $errmsg . '</p>';
 			}
